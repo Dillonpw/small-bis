@@ -1,1 +1,1 @@
-# Simple Social app
+# Small business website template
