@@ -1,11 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ThemeToggle from "../components/theme";
+import Nav from "../components/nav.tsx";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="bg-gray-100 dark:bg-purple-950 h-[100vh]">
-	<!--This will be moved into the navigation component --><ThemeToggle client:load />
-    <p>Hello</p>
+  <main class="h-[100vh]">
+    <!--This will be moved into the navigation component -->
+    <Nav client:load />
   </main>
 </Layout>
