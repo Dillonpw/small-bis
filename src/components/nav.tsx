@@ -25,11 +25,14 @@ const Nav = () => {
 
       {/* Mobile Navigation */}
       <div className="pt-2 text-4xl md:hidden">
-        <nav className="ml-4 mb-4 flex justify-between">
+        <nav className="mb-4 flex justify-between items-center">
           <a href="/#/">Logo</a>
-          <button className="mr-4" onClick={toggle}>
-            {isOpen ? "Close" : "Menu"}
-          </button>
+          <div>
+            <ThemeToggle />
+            <button className="mx-4" onClick={toggle}>
+              dd
+            </button>
+          </div>
         </nav>
         {isOpen && (
           <ul className="mr-4 flex flex-col items-end gap-4">
@@ -39,7 +42,6 @@ const Nav = () => {
             <li>
               <a href="/#/">Contact</a>
             </li>
-            <ThemeToggle />
           </ul>
         )}
       </div>
