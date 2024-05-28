@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <>
       {/* Desktop Navigation */}
-      <div className="hidden pt-2 text-4xl md:block">
+      <div className="hidden pt-2 text-4xl md:block mx-20">
         <nav className="ml-4 flex justify-between">
           <a href="/#/">Logo</a>
           <ul className="mr-4 flex gap-4">
@@ -24,7 +24,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="pt-2 text-4xl md:hidden">
+      <div className="pt-2 text-4xl md:hidden mx-20">
         <nav className="mb-4 flex justify-between items-center">
           <a href="/#/">Logo</a>
           <div>

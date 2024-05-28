@@ -1,11 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Nav from "../components/nav.tsx";
+import Hero from "../components/hero.astro";
+import Services from "../components/services.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="h-[100vh]">
-    <!--This will be moved into the navigation component -->
-    <Nav client:load />
+  <main>
+    <Hero />
+    <Services />
   </main>
 </Layout>
