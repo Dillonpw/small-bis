@@ -6,17 +6,17 @@ const Nav = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <>
+    <div className="">
       {/* Desktop Navigation */}
-      <div className="hidden pt-2 text-4xl md:block mx-20">
-        <nav className="ml-4 flex justify-between">
+      <div className="mx-20 hidden py-2 text-4xl md:block">
+        <nav className="my-4 flex justify-between">
           <a href="/#/">Logo</a>
           <ul className="mr-4 flex gap-4">
             <li>
               <a href="/#/">About</a>
             </li>
             <li>
-              <a href="/#/">Contact</a>
+              <a href="/Contact">Contact</a>
             </li>
             <ThemeToggle />
           </ul>
@@ -24,28 +24,32 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="pt-2 text-4xl md:hidden mx-20">
-        <nav className="mb-4 flex justify-between items-center">
-          <a href="/#/">Logo</a>
+      <div className="relative mx-20 py-2 text-4xl md:hidden">
+        <nav className="my-4 flex items-center justify-between">
+          <a href="/">Logo</a>
           <div>
             <ThemeToggle />
-            <button className="mx-4" onClick={toggle}>
-              dd
+            <button className="mx-4 px-4 hover:scale-110" onClick={toggle}>
+              ☰
             </button>
           </div>
         </nav>
         {isOpen && (
-          <ul className="mr-4 flex flex-col items-end gap-4">
+          <ul className="absolute right-0 z-10 flex flex-col items-end gap-4 rounded-b-md bg-gray-100 p-4 text-black shadow-lg">
             <li>
-              <a href="/#/">About</a>
+              <a className="hover:underline" href="/#/">
+                About
+              </a>
             </li>
             <li>
-              <a href="/#/">Contact</a>
+              <a className="hover:underline" href="/Contact">
+                Contact
+              </a>
             </li>
           </ul>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
