@@ -1,49 +1,47 @@
 ---
-
 ---
-
-<section class="flex flex-col items-center gap-4 p-4 lg:flex-row">
-  <div class="flex justify-center lg:w-1/2">
-    <img
-      src=""
-      alt="an image of completed work"
-      class="h-auto w-full max-w-md"
-    />
-  </div>
-  <div class="flex flex-col items-center justify-center space-y-4 lg:w-1/2">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde temporibus
-      dolor laudantium dolores, nihil nulla cupiditate optio corporis facilis
-      aspernatur harum necessitatibus ab aliquid aperiam ex sequi exercitationem
-      officiis itaque.
-    </p>
-    <a
-      href="/About"
-      class="rounded-md bg-yellow-300 p-4 text-black hover:bg-yellow-500"
-      >More about us</a
-    >
-  </div>
-</section>
-
-<section class="flex flex-col items-center gap-4 p-4 lg:flex-row">
-  <div class="flex flex-col justify-center lg:w-1/2">
-    <img
-      src=""
-      alt="an image of completed work"
-      class="h-auto w-full max-w-md"
-    />
-  </div>
-  <div class="flex flex-col items-center justify-center space-y-4 lg:w-1/2">
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-      excepturi accusantium rem deserunt, aliquid voluptates provident earum
-      atque ipsum cumque dolorem veritatis facere. Nam architecto aliquam quae
-      fugiat sint ea.
-    </p>
-    <a
-      href="/Contact"
-      class="rounded-md bg-yellow-300 p-4 text-black hover:bg-yellow-500"
-      >Get a quote</a
-    >
-  </div>
-</section>
+<section class="flex flex-col items-center gap-4 p-4 lg:flex-row mb-20">
+    <div class="order-1 flex justify-center w-full lg:w-1/2">
+      <img
+        src="/work1.jpg"
+        alt="an image of completed work"
+        class="h-auto w-full max-w-md rounded-xl"
+      />
+    </div>
+    <div class="order-2 flex flex-col items-center justify-center space-y-4 w-full lg:w-1/2">
+      <p class="text-xl mx-20">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde temporibus
+        dolor laudantium dolores, nihil nulla cupiditate optio corporis facilis
+        aspernatur harum necessitatibus ab aliquid aperiam ex sequi exercitationem
+        officiis itaque.
+      </p>
+      <a
+        href="/About"
+        class="order-3 rounded-md bg-yellow-300 p-4 text-black hover:bg-yellow-500"
+        >More about us</a
+      >
+    </div>
+  </section>
+  
+  <section class="flex flex-col items-center gap-4 p-4 lg:flex-row">
+    <div class="order-2 flex flex-col items-center justify-center space-y-4 w-full lg:w-1/2">
+      <p class="text-xl mx-20">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+        excepturi accusantium rem deserunt, aliquid voluptates provident earum
+        atque ipsum cumque dolorem veritatis facere. Nam architecto aliquam quae
+        fugiat sint ea.
+      </p>
+      <a href="/Contact"
+        class="order-3 rounded-md bg-yellow-300 p-4 text-black hover:bg-yellow-500"
+        >Get a quote</a
+      >
+    </div>
+    <div class="order-1 flex justify-center w-full lg:w-1/2 lg:order-3">
+      <img
+        src="/work2.jpg"
+        alt="an image of completed work"
+        class="h-auto w-full max-w-md rounded-xl"
+      />
+    </div>
+  </section>
+  
