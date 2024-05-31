@@ -13,7 +13,7 @@ const Nav = () => {
           <a href="/">
             <img
               className="h-14 rounded-full"
-              src="/public/Cartoon.jpeg"
+              src="/Cartoon.jpeg"
               alt="Logo"
             />
           </a>
