@@ -45,7 +45,7 @@ const Nav = () => {
             </li>
             <li>
               <a
-                href="/Reviews"
+                href="/reviews"
                 className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:text-2xl lg:p-4"
               >
                 Reviews
