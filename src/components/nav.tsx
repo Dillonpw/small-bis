@@ -1,7 +1,6 @@
 import ThemeToggle from "./theme.tsx";
 import { useState } from "react";
 
-
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -21,7 +20,7 @@ const Nav = () => {
           <ul className="mr-4 flex gap-4">
             <li>
               <a
-                className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:text-2xl lg:p-4"
+                className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:p-4 lg:text-2xl"
                 href="/"
               >
                 Home
@@ -30,7 +29,7 @@ const Nav = () => {
             <li>
               <a
                 href="/About"
-                className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:text-2xl lg:p-4"
+                className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:p-4 lg:text-2xl"
               >
                 About
               </a>
@@ -38,7 +37,7 @@ const Nav = () => {
             <li>
               <a
                 href="/Services"
-                className="rounded-lg hover:bg-yellow-400 md:p-2  md:text-xl lg:text-2xl lg:p-4"
+                className="rounded-lg hover:bg-yellow-400 md:p-2  md:text-xl lg:p-4 lg:text-2xl"
               >
                 Services
               </a>
@@ -46,7 +45,7 @@ const Nav = () => {
             <li>
               <a
                 href="/Reviews"
-                className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:text-2xl lg:p-4"
+                className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:p-4 lg:text-2xl"
               >
                 Reviews
               </a>
@@ -54,7 +53,7 @@ const Nav = () => {
             <li>
               <a
                 href="/Contact"
-                className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:text-2xl lg:p-4"
+                className="rounded-lg hover:bg-yellow-400 md:p-2 md:text-xl lg:p-4 lg:text-2xl"
               >
                 Contact
               </a>
@@ -82,7 +81,7 @@ const Nav = () => {
           </div>
         </nav>
         {isOpen && (
-          <ul className="roun ded-md absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 pb-6 border-2 bg-gray-100 p-4 text-black shadow-lg dark:border-none dark:bg-black dark:text-white">
+          <ul className="roun ded-md absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 border-2 bg-gray-100 p-4 pb-6 text-black shadow-lg dark:border-none dark:bg-black dark:text-white">
             <li>
               <a className="un" href="/">
                 Home
