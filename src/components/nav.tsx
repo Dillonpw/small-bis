@@ -82,29 +82,29 @@ const Nav = () => {
           </div>
         </nav>
         {isOpen && (
-          <ul className="roun ded-md absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 border-2 bg-gray-100 p-4 text-black shadow-lg dark:border-none dark:bg-black dark:text-white">
+          <ul className="roun ded-md absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 pb-6 border-2 bg-gray-100 p-4 text-black shadow-lg dark:border-none dark:bg-black dark:text-white">
             <li>
-              <a className="hover:underline" href="/">
+              <a className="un" href="/">
                 Home
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="/About">
+              <a className="un" href="/About">
                 About
               </a>
             </li>
             <li>
-              <a href="/Services" className="hover:underline">
+              <a href="/Services" className="un">
                 Services
               </a>
             </li>
             <li>
-              <a href="/Reviews" className="hover:underline">
+              <a href="/Reviews" className="un">
                 Reviews
               </a>
             </li>
             <li>
-              <a className="hover:underline" href="/Contact">
+              <a className="un" href="/Contact">
                 Contact
               </a>
             </li>
