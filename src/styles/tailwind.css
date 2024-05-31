@@ -20,3 +20,10 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+}

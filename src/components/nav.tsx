@@ -6,7 +6,7 @@ const Nav = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="">
+    <div className="fixed-nav bg-gray-100 shadow-lg dark:shadow-gray-600 dark:shadow-sm text-black dark:bg-black dark:text-white ">
       {/* Desktop Navigation */}
       <div className=" mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
