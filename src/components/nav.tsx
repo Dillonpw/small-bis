@@ -81,7 +81,7 @@ const Nav = () => {
           </div>
         </nav>
         {isOpen && (
-          <ul className="roun ded-md absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 border-2 bg-gray-100 p-4 pb-6 text-black shadow-lg dark:border-none dark:bg-black dark:text-white">
+          <ul className="rounded-md absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 border-2 bg-gray-100 p-4 pb-6 text-black shadow-lg dark:border-none dark:bg-black dark:text-white">
             <li>
               <a className="un" href="/">
                 Home
