@@ -1,6 +1,7 @@
 import ThemeToggle from "./theme.tsx";
 import { useState } from "react";
 
+
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);

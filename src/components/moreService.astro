@@ -1,11 +1,14 @@
 ---
+import Image from "astro/components/Image.astro"
 ---
 <section class="flex mt-40 flex-col items-center gap-4 p-4 lg:flex-row mb-20">
     <div class="order-1 flex justify-center w-full lg:w-1/2">
-      <img
+      <Image
         src="/work1.jpg"
-        alt="an image of completed work"
+        alt=" completed work"
         class="h-auto w-full max-w-md rounded-xl"
+        width={500}
+        height={500}        
       />
     </div>
     <div class="order-2 flex flex-col items-center justify-center space-y-4 w-full lg:w-1/2">
@@ -37,10 +40,12 @@
       >
     </div>
     <div class="order-1 flex justify-center w-full lg:w-1/2 lg:order-3">
-      <img
+      <Image
         src="/work2.jpg"
-        alt="an image of completed work"
+        alt="completed work"
         class="h-auto w-full max-w-md rounded-xl"
+        width={500}
+        height={500}
       />
     </div>
   </section>
