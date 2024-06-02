@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import Nav from "../components/nav.tsx";
+import Action from "../components/action.astro";
 import Footer from "../components/footer.astro";
 import "../styles/tailwind.css";
 ---
@@ -22,6 +23,7 @@ import "../styles/tailwind.css";
   <body class="bg-gray-100 dark:bg-black dark:text-white">
     <Nav client:load />
     <slot />
+    <Action />
     <Footer />
   </body>
 </html>

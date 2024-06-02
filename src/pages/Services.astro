@@ -1,5 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Service from "../components/services.astro";
+import MoreService from "../components/moreService.astro";
+const title = "Our Services";
 ---
 
-<Layout title="Services" />
+<Layout title="Company Name | Our Services">
+  <div
+    class="mb-60 mt-20 rounded-b-md bg-slate-800 py-20 text-center text-6xl font-bold text-white shadow-xl"
+  >
+    {title}
+  </div>
+  <MoreService />
+  <div class="mt-60"></div>
+  <Service />
+</Layout>

@@ -6,7 +6,7 @@ const Nav = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="fixed-nav bg-gray-100 shadow-lg dark:shadow-gray-600 dark:shadow-sm text-black dark:bg-black dark:text-white ">
+    <div className="fixed-nav bg-gray-100 text-black shadow-lg dark:bg-black dark:text-white dark:shadow-md dark:shadow-gray-800 ">
       {/* Desktop Navigation */}
       <div className=" mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
@@ -20,10 +20,7 @@ const Nav = () => {
               </a>
             </li>
             <li>
-              <a
-                href="/About"
-                className="un rounded-lg md:text-xl lg:text-2xl"
-              >
+              <a href="/About" className="un rounded-lg md:text-xl lg:text-2xl">
                 About
               </a>
             </li>

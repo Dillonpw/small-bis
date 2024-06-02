@@ -1,5 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Form from "../components/form.astro";
+const title = "Contact";
 ---
 
-<Layout title="Contact" />
+<Layout title="Company Name | Contact Us">
+  <div
+    class="mt-20 rounded-b-md bg-slate-800 py-20 text-center text-6xl font-bold text-white shadow-xl"
+  >
+    {title}
+  </div>
+<Form />
+</Layout>
