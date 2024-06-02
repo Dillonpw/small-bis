@@ -28,14 +28,14 @@ const Nav: FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="fixed-nav bg-gray-100  shadow-lg dark:bg-stone-800 dark:text-white dark:shadow-md dark:shadow-gray-800">
+    <header className="fixed-nav bg-gray-100 shadow-lg dark:bg-stone-800 dark:text-white dark:shadow-md dark:shadow-gray-800">
       {/* Desktop Navigation */}
       <div className="mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
           <a href="/">
             <img className="h-14 rounded-full" src="/Cartoon.jpeg" alt="Logo" />
           </a>
-          <ul className="mr-4 flex gap-8">
+          <ul className="mr-4 flex gap-8 items-center">
             {navItems.map((item) => (
               <NavLink key={item.href} href={item.href}>
                 {item.label}
@@ -52,13 +52,9 @@ const Nav: FC = () => {
       <div className="relative mx-20 py-2 text-4xl md:hidden">
         <nav className="my-4 flex items-center justify-between">
           <a href="/">
-            <img
-              className="h-14 rounded-full"
-              src="/public/Cartoon.jpeg"
-              alt="Logo"
-            />
+            <img className="h-14 rounded-full" src="/Cartoon.jpeg" alt="Logo" />
           </a>
-          <div>
+          <div className="flex items-center">
             <ThemeToggle />
             <button className="mx-4 px-4 hover:scale-110" onClick={toggleMenu}>
               ☰

@@ -20,12 +20,14 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button
-      className="m-1 text-2xl font-bold text-yellow-400"
-      onClick={toggleTheme}
-    >
-      <FontAwesomeIcon icon={darkMode ? faSun : faMoon} />
-    </button>
+    <div className="mx-2">
+      <button
+        className="text-2xl font-bold text-yellow-400 w-10 h-10 mt-2 flex justify-center items-center"
+        onClick={toggleTheme}
+      >
+        <FontAwesomeIcon icon={darkMode ? faSun : faMoon} fixedWidth />
+      </button>
+    </div>
   );
 };
 
