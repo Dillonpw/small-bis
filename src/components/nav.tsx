@@ -9,7 +9,7 @@ interface NavLinkProps {
 
 const NavLink: FC<NavLinkProps> = ({ href, children }) => (
   <li>
-    <a className="un rounded-lg md:text-xl lg:text-2xl" href={href}>
+    <a className="un rounded-lg md:text-xl lg:text-2xl xl:text-4xl" href={href}>
       {children}
     </a>
   </li>
@@ -28,7 +28,7 @@ const Nav: FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="fixed-nav bg-gray-100 shadow-lg dark:bg-stone-800 dark:text-white dark:shadow-md dark:shadow-gray-800">
+    <header className="fixed-nav bg-gray-100 shadow-lg dark:bg-stone-800 dark:text-white dark:shadow-md">
       {/* Desktop Navigation */}
       <div className="mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
