@@ -1,14 +1,12 @@
----
-
----
-
-<form action="mailto:qyYvz@example.com" class="mx-6 grid grid-cols-1 gap-4">
-  <h1 class="col-span-1 mb-4 mt-10 text-center text-2xl font-bold">
-    Get in touch
-  </h1>
-  <p class="col-span-1 mx-40 mb-4 text-left text-xl">
+<form
+  action="mailto:your2kats@gmail.com"
+  class="mx-6 grid max-w-[80%] grid-cols-1 gap-4 md:grid-cols-2"
+>
+  <p
+    class="col-span-1 mx-4 my-20 text-center text-2xl md:col-span-2 md:text-left"
+  >
     If you have any questions or concerns please feel free to reach out to us.
-    We respond to every call and email.
+    We respond to every email.
   </p>
   <div class="col-span-1">
     <label for="name" class="mb-2 block">Name:</label>
@@ -16,7 +14,7 @@
       type="text"
       id="name"
       placeholder="Name"
-      class="w-[60%] rounded-md border border-gray-300 p-2"
+      class="w-full rounded-md border border-gray-300 p-2 text-stone-800 md:w-[90%]"
     />
   </div>
   <div class="col-span-1">
@@ -25,7 +23,7 @@
       type="email"
       id="email"
       placeholder="Email"
-      class="w-[60%] rounded-md border border-gray-300 p-2"
+      class="w-full rounded-md border border-gray-300 p-2 text-stone-800 md:w-[90%]"
     />
   </div>
   <div class="col-span-1">
@@ -34,7 +32,7 @@
       type="text"
       id="location"
       placeholder="Location"
-      class="w-[60%] rounded-md border border-gray-300 p-2"
+      class="w-full rounded-md border border-gray-300 p-2 text-stone-800 md:w-[90%]"
     />
   </div>
   <div class="col-span-1">
@@ -43,21 +41,22 @@
       type="text"
       id="how"
       placeholder="How Did You Hear About Us?"
-      class="w-[60%] rounded-md border border-gray-300 p-2"
+      class="w-full rounded-md border border-gray-300 p-2 text-stone-800 md:w-[90%]"
     />
   </div>
-  <div class="col-span-1">
+  <div class="col-span-1 md:col-span-2">
     <label for="message" class="mb-2 block">Message:</label>
     <textarea
       id="message"
       placeholder="Message"
-      class="h-32 w-[60%] rounded-md border border-gray-300 p-2"></textarea>
+      class="h-32 w-full rounded-md border border-gray-300 p-2 text-stone-800 md:w-[90%]"
+    ></textarea>
   </div>
-  <div class="col-span-1">
-    <input
+  <div class="col-span-1 md:col-span-2">
+    <button
       type="submit"
-      value="Send"
-      class="w-[60%] rounded-md bg-yellow-400 p-2 text-stone-900 hover:bg-yellow-500"
-    />
+      class="cursor-pointer rounded-lg bg-yellow-400 p-4 text-stone-800 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-yellow-600"
+      >Submit</button
+    >
   </div>
 </form>

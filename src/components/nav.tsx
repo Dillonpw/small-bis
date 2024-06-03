@@ -50,9 +50,9 @@ const Nav: FC = () => {
 
       {/* Mobile Navigation */}
       <div className="relative mx-20 py-2 text-4xl md:hidden">
-        <nav className="my-4 flex items-center justify-between transition-all duration-300">
+        <nav className="my-4 flex items-center justify-between">
           <a href="/">
-            <img className="h-14 rounded-full" src="/Cartoon.jpeg" alt="Logo" />
+            <p className="font-bold">LOGO</p>{" "}
           </a>
           <div className="flex items-center">
             <ThemeToggle />
@@ -62,7 +62,7 @@ const Nav: FC = () => {
           </div>
         </nav>
         {isOpen && (
-          <ul className="absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 rounded-md border-2 bg-gray-100 p-4 pb-6 text-black shadow-lg transition-all duration-300 dark:border-none dark:bg-stone-800 dark:text-white">
+          <ul className="absolute right-0 z-10 flex w-[60%]  flex-col items-end gap-4 rounded-md bg-gray-100 p-4 pb-6 text-black shadow-lg transition-all duration-300  dark:bg-stone-800 dark:text-white">
             {navItems.map((item) => (
               <NavLink key={item.href} href={item.href}>
                 {item.label}
