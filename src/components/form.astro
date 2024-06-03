@@ -2,14 +2,62 @@
 
 ---
 
-<form action="mailto:qyYvz@example.com" class="grid grid-cols-2">
-  <h1>Get in touch</h1>
-  <p>Let us know how we can help</p>
-  <label for="name">Name:</label>
-  <input type="text" id="name" placeholder="Name" />
-  <label for="email">Email:</label>
-  <input type="text" id="email" placeholder="Email" />
-  <label for="message">Message:</label>
-  <textarea placeholder="Message"></textarea>
-  <input type="submit" value="Send" />
+<form action="mailto:qyYvz@example.com" class="mx-6 grid grid-cols-1 gap-4">
+  <h1 class="col-span-1 mb-4 mt-10 text-center text-2xl font-bold">
+    Get in touch
+  </h1>
+  <p class="col-span-1 mx-40 mb-4 text-left text-xl">
+    If you have any questions or concerns please feel free to reach out to us.
+    We respond to every call and email.
+  </p>
+  <div class="col-span-1">
+    <label for="name" class="mb-2 block">Name:</label>
+    <input
+      type="text"
+      id="name"
+      placeholder="Name"
+      class="w-[60%] rounded-md border border-gray-300 p-2"
+    />
+  </div>
+  <div class="col-span-1">
+    <label for="email" class="mb-2 block">Email:</label>
+    <input
+      type="email"
+      id="email"
+      placeholder="Email"
+      class="w-[60%] rounded-md border border-gray-300 p-2"
+    />
+  </div>
+  <div class="col-span-1">
+    <label for="location" class="mb-2 block">Location:</label>
+    <input
+      type="text"
+      id="location"
+      placeholder="Location"
+      class="w-[60%] rounded-md border border-gray-300 p-2"
+    />
+  </div>
+  <div class="col-span-1">
+    <label for="how" class="mb-2 block">How Did You Hear About Us?:</label>
+    <input
+      type="text"
+      id="how"
+      placeholder="How Did You Hear About Us?"
+      class="w-[60%] rounded-md border border-gray-300 p-2"
+    />
+  </div>
+  <div class="col-span-1">
+    <label for="message" class="mb-2 block">Message:</label>
+    <textarea
+      id="message"
+      placeholder="Message"
+      class="h-32 w-[60%] rounded-md border border-gray-300 p-2"></textarea>
+  </div>
+  <div class="col-span-1">
+    <input
+      type="submit"
+      value="Send"
+      class="w-[60%] rounded-md bg-yellow-400 p-2 text-stone-900 hover:bg-yellow-500"
+    />
+  </div>
 </form>
