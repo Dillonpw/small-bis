@@ -28,7 +28,7 @@ const ThemeToggle = () => {
         <FontAwesomeIcon 
           icon={darkMode ? faSun : faMoon} 
           fixedWidth 
-          className="theme-icon transition-transform duration-300 ease-in-out" 
+          className="theme-icon text-yellow-400 transition-transform duration-300 ease-in-out" 
         />
       </button>
     </div>

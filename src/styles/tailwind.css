@@ -15,7 +15,6 @@ body {
 
 html.dark .theme-icon {
   transform: rotate(180deg);
-  opacity: 0.5;
 }
 
 .transition-all {
@@ -27,6 +26,7 @@ html.dark .theme-icon {
   position: relative;
   text-decoration: none;
 }
+
 .un::after {
   content: "";
   position: absolute;
