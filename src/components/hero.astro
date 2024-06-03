@@ -1,5 +1,7 @@
 ---
-
+import Button from "./button.astro";
+const link = "/Contact";
+const text = "Call to Action"
 ---
 
 <section class="h-[70vh] w-full bg-[url('/heroIMG.jpg')] bg-cover">
@@ -7,10 +9,7 @@
     <div class="flex h-full flex-col items-center justify-center text-white">
       <h1 class="mb-4 text-center text-8xl">Main Keywords</h1>
       <h2 class="mb-8 text-4xl">brief description of services</h2>
-      <a
-        class="rounded-md bg-yellow-400 p-4 duration-300 text-stone-900 hover:bg-yellow-500"
-        href="/Contact">Call to action</a
-      >
+      <Button link={link} text={text} />
     </div>
   </div>
 </section>

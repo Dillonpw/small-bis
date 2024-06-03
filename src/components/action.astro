@@ -1,5 +1,7 @@
 ---
-
+import Button from "./button.astro";
+const link = "/Contact";
+const text = "Get Your Free Estimate"
 ---
 
 <section
@@ -11,9 +13,6 @@
       Quick affirmative line about your company or why a customer would love to
       work with you
     </h2>
-    <a
-      class="hover-effect rounded-md transition-300 bg-yellow-400 px-10 py-4 text-xl text-slate-900 hover:bg-yellow-500"
-      href="/Contact">Get In Touch</a
-    >
+<Button link={link} text={text}/>
   </div>
 </section>
