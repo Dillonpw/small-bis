@@ -33,9 +33,9 @@ const Nav: FC = () => {
       <div className="mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
           <a href="/">
-            <img className="h-14 rounded-full" src="/Cartoon.jpeg" alt="Logo" />
+            <h1 className="font-bold">LOGO</h1>
           </a>
-          <ul className="mr-4 flex gap-8 items-center">
+          <ul className="mr-4 flex items-center gap-8">
             {navItems.map((item) => (
               <NavLink key={item.href} href={item.href}>
                 {item.label}
@@ -62,7 +62,7 @@ const Nav: FC = () => {
           </div>
         </nav>
         {isOpen && (
-          <ul className="absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 rounded-md border-2 bg-gray-100 p-4 pb-6 text-black shadow-lg dark:border-none dark:bg-black dark:text-white">
+          <ul className="absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 rounded-md border-2 bg-gray-100 p-4 pb-6 text-black shadow-lg dark:border-none dark:bg-stone-800 dark:text-white">
             {navItems.map((item) => (
               <NavLink key={item.href} href={item.href}>
                 {item.label}

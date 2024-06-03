@@ -4,13 +4,20 @@ import Image from "astro/components/Image.astro";
 
 <section class="mb-20 mt-40 flex flex-col items-center gap-4 p-4 lg:flex-row">
   <div class="order-1 flex w-full justify-center lg:w-1/2">
-    <Image
-      src="/work1.jpg"
-      alt=" completed work"
-      class="h-auto w-full max-w-md rounded-xl"
-      width={500}
-      height={500}
-    />
+    <div class="group relative w-full max-w-md">
+      <Image
+        src="/work1.jpg"
+        alt="completed work"
+        class="h-auto w-full rounded-xl shadow-md"
+        width={500}
+        height={500}
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"
+      >
+        <span class="text-4xl text-white">Name of this service</span>
+      </div>
+    </div>
   </div>
   <div
     class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2"
@@ -23,7 +30,7 @@ import Image from "astro/components/Image.astro";
     </p>
     <a
       href="/About"
-      class="order-3 rounded-md bg-yellow-400 p-4 text-stone-900 hover:bg-yellow-500"
+      class="order-3 rounded-md bg-yellow-400 p-4 text-stone-900 duration-300 hover:bg-yellow-500"
       >More about us</a
     >
   </div>
@@ -41,17 +48,24 @@ import Image from "astro/components/Image.astro";
     </p>
     <a
       href="/Contact"
-      class="order-3 rounded-md bg-yellow-400 p-4 text-stone-900 hover:bg-yellow-500"
+      class="order-3 rounded-md bg-yellow-400 p-4 text-stone-900 duration-300 hover:bg-yellow-500"
       >Get a quote</a
     >
   </div>
   <div class="order-1 flex w-full justify-center lg:order-3 lg:w-1/2">
-    <Image
-      src="/work2.jpg"
-      alt="completed work"
-      class="h-auto w-full max-w-md rounded-xl"
-      width={500}
-      height={500}
-    />
+    <div class="group relative w-full max-w-md">
+      <Image
+        src="/work2.jpg"
+        alt="completed work"
+        class="h-auto w-full rounded-xl shadow-md"
+        width={500}
+        height={500}
+      />
+      <div
+        class="absolute inset-0 flex items-center justify-center bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"
+      >
+        <span class="text-4xl text-white">Name of this service</span>
+      </div>
+    </div>
   </div>
 </section>
