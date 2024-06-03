@@ -9,7 +9,10 @@ interface NavLinkProps {
 
 const NavLink: FC<NavLinkProps> = ({ href, children }) => (
   <li>
-    <a className="un rounded-lg md:text-xl lg:text-2xl xl:text-4xl" href={href}>
+    <a
+      className="un rounded-lg  md:text-xl lg:text-2xl xl:text-4xl"
+      href={href}
+    >
       {children}
     </a>
   </li>
@@ -49,14 +52,14 @@ const Nav: FC = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="relative mx-20 py-2 text-4xl md:hidden">
+      <div className="relative mx-5 py-2 text-4xl md:hidden">
         <nav className="my-4 flex items-center justify-between">
           <a href="/">
-            <p className="font-bold">LOGO</p>{" "}
+            <p className="text-2xl font-bold">Logo</p>
           </a>
           <div className="flex items-center">
             <ThemeToggle />
-            <button className="mx-4 px-4 hover:scale-110" onClick={toggleMenu}>
+            <button className=" px-2 hover:scale-110" onClick={toggleMenu}>
               ☰
             </button>
           </div>
