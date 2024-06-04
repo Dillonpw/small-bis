@@ -59,7 +59,7 @@ const Nav: FC = () => {
           </a>
           <div className="flex items-center">
             <ThemeToggle />
-            <button className=" px-2 hover:scale-110" onClick={toggleMenu}>
+            <button className="px-2 hover:scale-110" name='dropdown' onClick={toggleMenu}>
               ☰
             </button>
           </div>
