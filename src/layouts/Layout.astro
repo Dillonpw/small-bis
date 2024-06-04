@@ -18,6 +18,16 @@ import "../styles/tailwind.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <script is:inline>
+      (function() {
+        const isDarkMode = localStorage.getItem("theme") === "dark";
+        if (isDarkMode) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
     <title>{title}</title>
   </head>
   <body class="bg-gray-100 text-stone-900 dark:bg-stone-800 dark:text-white">
