@@ -14,6 +14,7 @@ const text = "Get A Quote";
         class="h-auto w-full rounded-xl shadow-md"
         width={500}
         height={500}
+        loading="lazy"
       />
       <div
         class="absolute inset-0 flex items-center justify-center rounded-lg bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"
@@ -22,9 +23,7 @@ const text = "Get A Quote";
       </div>
     </div>
   </div>
-  <div
-    class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2"
-  >
+  <div class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2">
     <p class="mx-10 text-center text-xl lg:text-left">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde temporibus
       dolor laudantium dolores, nihil nulla cupiditate optio corporis facilis
@@ -37,14 +36,13 @@ const text = "Get A Quote";
       <li>part 2</li>
       <li>part 3</li>
       <li>part 4</li>
-
-    </ul><Button link={link} text={text} />
+    </ul>
+    <Button link={link} text={text} />
   </div>
 </section>
+
 <section class="flex flex-col items-center gap-4 p-4 lg:flex-row">
-  <div
-    class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2"
-  >
+  <div class="order-2 flex w-full flex-col items-center justify-center space-y-4 lg:w-1/2">
     <p class="mx-10 text-center text-xl lg:text-left">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
       excepturi accusantium rem deserunt, aliquid voluptates provident earum
@@ -61,6 +59,7 @@ const text = "Get A Quote";
         class="h-auto w-full rounded-xl shadow-md"
         width={500}
         height={500}
+        loading="lazy"
       />
       <div
         class="absolute inset-0 flex items-center justify-center rounded-lg bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"
