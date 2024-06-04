@@ -1,16 +1,19 @@
+import { useState, useEffect } from "react";
 import ThemeToggle from "./theme";
-import { useState } from "react";
 import type { FC } from "react";
 
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
+  isActive: boolean;
 }
 
-const NavLink: FC<NavLinkProps> = ({ href, children }) => (
+const NavLink: FC<NavLinkProps> = ({ href, children, isActive }) => (
   <li>
     <a
-      className="un rounded-lg  md:text-xl lg:text-2xl xl:text-4xl"
+      className={`un rounded-lg md:text-xl lg:text-2xl xl:text-4xl ${
+        isActive ? "bg-yellow-300 px-2 dark:bg-yellow-600" : ""
+      }`}
       href={href}
     >
       {children}
@@ -28,6 +31,12 @@ const navItems = [
 
 const Nav: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activePath, setActivePath] = useState<string>("");
+
+  useEffect(() => {
+    setActivePath(window.location.pathname);
+  }, []);
+
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -40,7 +49,11 @@ const Nav: FC = () => {
           </a>
           <ul className="mr-4 flex items-center gap-8">
             {navItems.map((item) => (
-              <NavLink key={item.href} href={item.href}>
+              <NavLink
+                key={item.href}
+                href={item.href}
+                isActive={activePath === item.href}
+              >
                 {item.label}
               </NavLink>
             ))}
@@ -69,9 +82,13 @@ const Nav: FC = () => {
           </div>
         </nav>
         {isOpen && (
-          <ul className="absolute right-0 z-10 flex w-[60%]  flex-col items-end gap-4 rounded-md bg-gray-100 p-4 pb-6 text-black shadow-lg transition-all duration-300  dark:bg-stone-800 dark:text-white">
+          <ul className="absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 rounded-md bg-gray-100 p-4 pb-6 text-black shadow-lg transition-all duration-300 dark:bg-stone-800 dark:text-white">
             {navItems.map((item) => (
-              <NavLink key={item.href} href={item.href}>
+              <NavLink
+                key={item.href}
+                href={item.href}
+                isActive={activePath === item.href}
+              >
                 {item.label}
               </NavLink>
             ))}
