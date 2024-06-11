@@ -12,7 +12,7 @@ const NavLink: FC<NavLinkProps> = ({ href, children, isActive }) => (
   <li>
     <a
       className={`un rounded-lg md:text-xl lg:text-2xl xl:text-4xl ${
-        isActive ? "bg-yellow-300 dark:bg-yellow-600" : ""
+        isActive ? "bg-gray-300 py-1 " : ""
       }`}
       href={href}
     >
