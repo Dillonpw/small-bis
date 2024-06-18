@@ -40,7 +40,7 @@ const Nav: FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="fixed-nav bg-gray-100 shadow-lg transition-all duration-300 dark:bg-stone-800 dark:text-white dark:shadow-md">
+    <header className="fixed-nav bg-gray-100 shadow-lg transition-all duration-300 dark:bg-gray-900 dark:text-white dark:shadow-md">
       {/* Desktop Navigation */}
       <div className="mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
