@@ -82,7 +82,7 @@ const Nav: FC = () => {
           </div>
         </nav>
         {isOpen && (
-          <ul className="absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 rounded-md bg-gray-100 p-4 pb-6 text-black shadow-lg transition-all duration-300 dark:bg-stone-800 dark:text-white">
+          <ul className="absolute right-0 z-10 flex w-[60%] flex-col items-end gap-4 rounded-md bg-gray-100 p-4 pb-6 text-black shadow-lg transition-all duration-300 dark:bg-gray-900 dark:text-white">
             {navItems.map((item) => (
               <NavLink
                 key={item.href}
