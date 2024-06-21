@@ -12,7 +12,7 @@ const NavLink: FC<NavLinkProps> = ({ href, children, isActive }) => (
   <li>
     <a
       className={`un rounded-lg md:text-xl lg:text-2xl xl:text-4xl ${
-        isActive ? "bg-gray-300 py-1 " : ""
+        isActive ? "bg-gray-400 py-1 " : ""
       }`}
       href={href}
     >
@@ -40,7 +40,7 @@ const Nav: FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="fixed-nav bg-gray-100 shadow-lg transition-all duration-300 dark:bg-gray-900 dark:text-white dark:shadow-md">
+    <header className="fixed-nav bg-gray-100 shadow-lg transition-all duration-300 dark:bg-gray-900 dark:text-gray-100 dark:shadow-md">
       {/* Desktop Navigation */}
       <div className="mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
