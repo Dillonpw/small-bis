@@ -1,14 +1,24 @@
 ---
 import Button from "./button.astro";
 const link = "/Contact";
+import Image from "astro/components/Image.astro";
 const text = "Call to Action";
 ---
 
-<section class="h-[70vh] w-full bg-[url('/heroIMG.jpeg')] bg-cover">
-  <div class="flex h-full flex-col items-center justify-center text-gray-100">
+<section class="relative h-[70vh] z-[-10] w-full">
+  <Image
+    src="/heroIMG.jpeg"
+    alt="hero"
+    loading="eager"
+    class="absolute inset-0 h-full w-full  object-cover"
+    width={1920}
+    height={1080}
+  />
+  <div
+    class="relative z-10 flex h-full flex-col items-center justify-center text-gray-100"
+  >
     <h1
-      class="pb-10 pt-20
- text-center text-6xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-8xl"
+      class="pb-10 pt-20 text-center text-6xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-8xl"
     >
       Main Keywords
     </h1>
