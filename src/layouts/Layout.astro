@@ -15,9 +15,15 @@ import "../styles/tailwind.css";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro smaall business wesbite template" />
+    <meta name="description" content="Astro small business wesbite template" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="robots" content="index, follow" />
+    <meta name="title" content={title} />
+    <meta
+      name="keywords"
+      content="website template, astro, react, showcase, starlight, responsive design, HTML5, CSS3, JavaScript, performance optimization, SEO friendly, modern web design, cross-browser compatibility, fast loading, mobile-first design, user-friendly interface, web development, clean code, W3C standards, customizable templates"
+    />
     <meta name="generator" content={Astro.generator} />
     <ViewTransitions />
     <script is:inline>
@@ -32,7 +38,9 @@ import "../styles/tailwind.css";
     </script>
     <title>{title}</title>
   </head>
-  <body class="bg-gray-100 text-neutral-950 dark:bg-neutral-950 dark:text-white">
+  <body
+    class="bg-gray-100 text-neutral-950 dark:bg-neutral-950 dark:text-white"
+  >
     <Nav client:load />
     <slot />
     <Action />
