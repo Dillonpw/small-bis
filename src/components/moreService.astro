@@ -1,13 +1,13 @@
 ---
 import Image from "astro/components/Image.astro";
 import Button from "./button.astro";
-const link = "/Contact";
-const text = "Get A Quote";
+const link = "/Services";
+const text = "Learn More";
 ---
 
 <section class="mb-20 mt-40 flex flex-col items-center gap-4 p-4 lg:flex-row">
   <div class="order-1 flex w-full justify-center lg:w-1/2">
-    <div class="group relative w-full max-w-md">
+    <div class="group relative w-fit max-w-md">
       <Image
         src="/work1.jpg"
         alt="completed work"
@@ -57,7 +57,7 @@ const text = "Get A Quote";
     <Button link={link} text={text} />
   </div>
   <div class="order-1 flex w-full justify-center lg:order-3 lg:w-1/2">
-    <div class="group relative w-full max-w-md">
+    <div class="group relative w-fit max-w-md">
       <Image
         src="/work2.jpg"
         alt="completed work"

@@ -5,19 +5,19 @@ import Image from "astro/components/Image.astro";
 const text = "Call to Action";
 ---
 
-<section class="relative h-[70vh] z-[-10] w-full">
+<section class="relative z-[-10] h-[70vh] w-full">
   <Image
     src="/heroIMG.jpeg"
     alt="hero"
     loading="eager"
-    class="absolute inset-0 h-full w-full  object-cover"
+    class="absolute inset-0 h-full w-full object-cover"
     width={1920}
     height={1080}
   />
   <div
     class="relative z-10 flex h-full flex-col items-center justify-center text-gray-100"
   >
-    <h1
+    <h1 transition:name="heroTxt" transition:animate="slide"
       class="pb-10 pt-20 text-center text-6xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-8xl"
     >
       Main Keywords
@@ -27,6 +27,5 @@ const text = "Call to Action";
     >
       brief description of services
     </h2>
-    <Button link={link} text={text} />
   </div>
 </section>
