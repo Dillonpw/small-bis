@@ -4,6 +4,10 @@ import Image from "astro/components/Image.astro";
 const text = "Call to Action";
 ---
 
+<head>
+  <link rel="preload" href="/heroimg.webp" as="image" />
+</head>
+
 <section class="relative z-[-10] h-[70vh] w-full">
   <Image
     src="/heroimg.webp"
@@ -16,12 +20,15 @@ const text = "Call to Action";
   <div
     class="relative z-10 flex h-full flex-col items-center justify-center text-gray-100"
   >
-    <h1 transition:name="heroTxt" transition:animate="slide"
+    <h1
+      transition:name="heroTxt"
+      transition:animate="slide"
       class="pb-10 pt-20 text-center text-6xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-8xl"
     >
       Main Keywords
     </h1>
-    <h2 transition:name="introTxt"
+    <h2
+      transition:name="introTxt"
       class="pb-6 text-center text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-4xl"
     >
       brief description of services
