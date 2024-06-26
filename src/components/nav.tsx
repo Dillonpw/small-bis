@@ -47,7 +47,7 @@ const Nav: FC = () => {
           <a href="/">
             <h1 className="font-bold">LOGO</h1>
           </a>
-          <ul className="mr-4 flex items-center gap-8">
+          <ul className="flex items-center gap-8">
             {navItems.map((item) => (
               <NavLink
                 key={item.href}
