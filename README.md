@@ -16,3 +16,18 @@ This is a simple, responsive website template for small businesses. It consists 
 - Optimized for performance, accessibility, SEO, and best practices
 - Easy to customize
 - Clean and modern design
+
+## Technologies Used
+
+- **Astro**: For static site generation
+- **TailwindCSS**: For styling
+- **React**: For interactive components
+- **TypeScript**: For type safety
+
+## Getting Started
+
+To get started with this project:
+
+```bash
+git clone https://github.com/dillonpw/small-bis.git
+cd small-bis
