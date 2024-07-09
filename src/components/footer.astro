@@ -1,5 +1,7 @@
 ---
-
+const location = "123 Company street City 12345";
+const email = "Company@email.com";
+const phone = "000-000-0000";
 ---
 
 <footer class="text-md gap-4 px-6 pb-8 pt-20 sm:text-xl md:px-40">
@@ -15,14 +17,20 @@
     </div>
     <div class="flex-col">
       <ul class="flex max-w-[160px] flex-col gap-2 text-left">
-        <li><a href="/Contact">123 Company st. Address 12345</a></li>
-        <li><a href="mailto:Company@email.com">Company@email.com</a></li>
+        <li><a href="/Contact">{location}</a></li>
+        <li><a href=`mailto:${email}`>{email}</a></li>
       </ul>
-      <tel>000-000-0000</tel>
+      <tel>{phone}</tel>
     </div>
   </div>
   <div class="mt-10 flex flex-col items-center justify-center">
-    <p>Designed by You</p>
+    <p>
+      Designed by <a
+        class="un"
+        href="https://github.com/dillonpw"
+        target="_blank">Dillonpw</a
+      >
+    </p>
     <p>© Copyright 2024</p>
   </div>
 </footer>

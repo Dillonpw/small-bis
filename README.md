@@ -1,4 +1,4 @@
-# Small Business Website Template
+# Small Business Website Astro Template
 
 This is a simple, responsive website template for small businesses. It consists of five pages and is optimized to achieve a perfect Lighthouse score.
 
