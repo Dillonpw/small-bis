@@ -3,6 +3,7 @@ import Image from "astro/components/Image.astro";
 import Button from "./button.astro";
 const link = "/Services";
 const text = "Learn More";
+const name = "redirect to services";
 ---
 
 <section class="mb-20 mt-20 flex flex-col items-center gap-4 p-4 lg:flex-row">
@@ -40,7 +41,7 @@ const text = "Learn More";
       <li>part 3</li>
       <li>part 4</li>
     </ul>
-    <Button link={link} text={text} />
+    <Button link={link} text={text} name={name} />
   </div>
 </section>
 
@@ -54,7 +55,7 @@ const text = "Learn More";
       atque ipsum cumque dolorem veritatis facere. Nam architecto aliquam quae
       fugiat sint ea.
     </p>
-    <Button link={link} text={text} />
+    <Button link={link} text={text} name={name} />
   </div>
   <div class="order-1 flex w-full justify-center lg:order-3 lg:w-1/2">
     <div class="group relative w-fit max-w-md">
