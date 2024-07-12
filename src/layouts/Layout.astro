@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from "astro:transitions";
 interface Props {
   title: string;
 }
@@ -25,7 +24,11 @@ import "../styles/tailwind.css";
       content="website template, astro, react, showcase, starlight, responsive design, HTML5, CSS3, JavaScript, performance optimization, SEO friendly, modern web design, cross-browser compatibility, fast loading, mobile-first design, user-friendly interface, web development, clean code, W3C standards, customizable templates"
     />
     <meta name="generator" content={Astro.generator} />
-    <ViewTransitions />
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
     <script is:inline>
       (function () {
         const isDarkMode = localStorage.getItem("theme") === "dark";
