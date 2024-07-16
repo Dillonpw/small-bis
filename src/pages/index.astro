@@ -3,9 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/hero.astro";
 import Services from "../components/services.astro";
 import MoreService from "../components/moreService.astro";
+//adjust these variable to change your content
+const title = "Your Company - What You Do";
 ---
 
-<Layout title="Your Company - What You Do">
+<Layout title={title}>
   <main>
     <Hero />
     <MoreService />

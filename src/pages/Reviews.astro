@@ -2,6 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import Testimonial from "../components/testimonial.astro";
 const title = "Reviews";
+
+//adjust these variable to change your content
+const introText = "What Our Customers Say About Us";
+const text1 =
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde temporibusdolor laudantium dolores, nihil nulla cupiditate optio corporis facilisaspernatur harum necessitatibus ab aliquid aperiam ex sequi exercitationemofficiis itaque.";
+const customerTitle1 = "Customer Title";
+const name1 = "customer Name";
+const text2 =
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde temporibusdolor laudantium dolores, nihil nulla cupiditate optio corporis facilisaspernatur harum necessitatibus ab aliquid aperiam ex sequi exercitationemofficiis itaque.";
+const customerTitle2 = "Customer Title";
+const name2 = "customer Name";
+const text3 =
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde temporibusdolor laudantium dolores, nihil nulla cupiditate optio corporis facilisaspernatur harum necessitatibus ab aliquid aperiam ex sequi exercitationemofficiis itaque.";
+const customerTitle3 = "Customer Title";
+const name3 = "customer Name";
 ---
 
 <Layout title="Company Name | Reviews">
@@ -17,9 +32,9 @@ const title = "Reviews";
     </p>
   </div>
   <p transition:name="introTxt" class="m-10 text-center text-xl font-bold">
-    See what our Customers have to say
+    {introText}
   </p>
-  <Testimonial />
-  <Testimonial />
-  <Testimonial />
+  <Testimonial text={text1} customerTitle={customerTitle1} name={name1} />
+  <Testimonial text={text2} customerTitle={customerTitle2} name={name2} />
+  <Testimonial text={text3} customerTitle={customerTitle3} name={name3} />
 </Layout>

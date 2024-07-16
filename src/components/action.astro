@@ -1,8 +1,13 @@
 ---
 import Button from "./button.astro";
 const link = "/Contact";
-const text = "Get A Free Estimate";
 const name = "redirect to contact";
+
+// adjust these variable to change your content
+const text = "Get A Free Estimate";
+const largeText = "Suggest Confidence In Your Company";
+const smallText =
+  "Quick affirmative line about your company or why a customer would love to work with you";
 ---
 
 <section
@@ -14,13 +19,12 @@ const name = "redirect to contact";
     <h1
       class="mx-20 pb-10 text-4xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-6xl"
     >
-      Suggest Confidence In Your Company
+      {largeText}
     </h1>
     <h2
       class="mx-10 mb-20 pb-10 text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-2xl"
     >
-      Quick affirmative line about your company or why a customer would love to
-      work with you
+      {smallText}
     </h2>
     <Button link={link} text={text} name={name} />
   </div>

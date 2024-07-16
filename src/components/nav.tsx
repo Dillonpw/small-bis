@@ -20,7 +20,7 @@ const NavLink: FC<NavLinkProps> = ({ href, children, isActive }) => (
     </a>
   </li>
 );
-
+//update these values if you plan to change the names of any of the pages//
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/About", label: "About" },
@@ -45,7 +45,9 @@ const Nav: FC = () => {
       <div className="mx-20 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
           <a href="/">
+            {/* Replace with your logo */}
             <h1 className="font-bold">LOGO</h1>
+            {/* end of logo section */}
           </a>
           <ul className="flex items-center gap-8">
             {navItems.map((item) => (

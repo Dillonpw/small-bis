@@ -1,7 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Form from "../components/form.astro";
+
+//adjust these variable to change your content
 const title = "Contact";
+const introText =
+  "If you have any questions or concerns please feel free to reach out to us. We respond to every email.";
 ---
 
 <Layout title="Company Name | Contact Us">
@@ -17,8 +21,7 @@ const title = "Contact";
     </p>
   </div>
   <p transition:name="introTxt" class="m-10 text-center text-xl font-bold">
-    If you have any questions or concerns please feel free to reach out to us.
-    We respond to every email.
+    {introText}
   </p>
   <Form />
 </Layout>

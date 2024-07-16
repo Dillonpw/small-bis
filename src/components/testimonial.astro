@@ -1,5 +1,5 @@
 ---
-
+const { text, customerTitle, name } = Astro.props;
 ---
 
 <section class="py-18 sm:py-22 relative isolate overflow-hidden px-6 lg:px-8">
@@ -11,9 +11,7 @@
         class="text-center text-xl leading-8 text-stone-800 sm:leading-9 dark:text-white"
       >
         <p>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-          expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in
-          laborum sed rerum et corporis.”
+{text}
         </p>
       </blockquote>
       <figcaption class="mt-10">
@@ -24,7 +22,7 @@
         />
         <div class="mt-4 flex items-center justify-center space-x-3 text-base">
           <div class="font-semibold text-gray-900 dark:text-gray-300">
-            Customer
+            {customerTitle}
           </div>
           <svg
             viewBox="0 0 2 2"
@@ -35,7 +33,7 @@
           >
             <circle cx="1" cy="1" r="1"></circle>
           </svg>
-          <div class="text-gray-600 dark:text-zinc-400">Happy Customer</div>
+          <div class="text-gray-600 dark:text-zinc-400">{name}</div>
         </div>
       </figcaption>
     </figure>

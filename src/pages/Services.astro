@@ -2,7 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import Service from "../components/services.astro";
 import MoreService from "../components/moreService.astro";
+
+//adjust these variable to change your content
 const title = "Our Services";
+const introText = "Here are a few of the service we offer"
 ---
 
 <Layout title="Company Name | Our Services">
@@ -18,7 +21,7 @@ const title = "Our Services";
     </p>
   </div>
   <p transition:name="introTxt" class="m-10 text-center text-xl font-bold">
-    Here are a few of the service we offer
+   {introText}
   </p>
   <MoreService />
   <div class="mt-60"></div>

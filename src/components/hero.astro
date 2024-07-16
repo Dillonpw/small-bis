@@ -1,7 +1,10 @@
 ---
 const link = "/Contact";
 import Image from "astro/components/Image.astro";
-const text = "Call to Action";
+
+// adjust these variable to change your content
+const mainText = "Main Keywords";
+const secondaryText = " brief description of services";
 ---
 
 <head>
@@ -25,13 +28,13 @@ const text = "Call to Action";
       transition:animate="slide"
       class="pb-10 pt-20 text-center text-6xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-8xl"
     >
-      Main Keywords
+      {mainText}
     </h1>
     <h2
       transition:name="introTxt"
       class="pb-6 text-center text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-4xl"
     >
-      brief description of services
+      {secondaryText}
     </h2>
   </div>
 </section>
