@@ -67,3 +67,39 @@
     @apply bg-background text-foreground;
   }
 }
+
+.un {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.un::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.un:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.theme-icon {
+  transform: rotate(0deg);
+  opacity: 1;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+html.dark .theme-icon {
+  transform: rotate(180deg);
+}
