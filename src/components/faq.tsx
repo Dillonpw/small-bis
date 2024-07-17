@@ -1,0 +1,44 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+export default function Faq() {
+  return (
+    <div
+      id="FAQ"
+      className="mx-40 my-20 flex flex-col items-center justify-center text-2xl"
+    >
+      <h1 className="mb-10 text-4xl">Frequently Asked Questions</h1>
+      <Accordion type="single" collapsible className="w-full">
+        <AccordionItem value="item-1">
+          <AccordionTrigger>Can you do this particular job?</AccordionTrigger>
+          <AccordionContent className="text-xl">
+            Yes. We do that particular job multiple times a week, sometimes
+            multiple times a day.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-2">
+          <AccordionTrigger>
+            I have been burned in the past, will that happen here?
+          </AccordionTrigger>
+          <AccordionContent className="text-xl">
+            Absoluetely not, we have a proven track record of successful jobs
+            and satisfied clients. Don't believe us? Check out our customer
+            reviews.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="item-3">
+          <AccordionTrigger>When will you be available next?</AccordionTrigger>
+          <AccordionContent className="text-xl">
+            Our availablility is constantly changing, if you are interested in
+            working together please conact us through our comapany email or
+            phone, both can be found in our contact page.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
+  );
+}

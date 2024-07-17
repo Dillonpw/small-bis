@@ -27,6 +27,7 @@ const navItems = [
   { href: "/Services", label: "Services" },
   { href: "/Reviews", label: "Reviews" },
   { href: "/Contact", label: "Contact" },
+  { href: "/#FAQ", label: "FAQ" },
 ];
 
 const Nav: FC = () => {

@@ -5,12 +5,12 @@ import MoreService from "../components/moreService.astro";
 
 //adjust these variable to change your content
 const title = "Our Services";
-const introText = "Here are a few of the service we offer"
+const introText = "Here are a few of the service we offer";
 ---
 
 <Layout title="Company Name | Our Services">
   <div
-    class="mt-20 flex h-[40vh] items-center justify-center bg-[url('/heroimg.webp')] bg-cover bg-center py-20 text-center text-6xl font-bold text-white shadow-xl"
+    class="flex h-[40vh] items-center justify-center bg-[url('/heroimg.webp')] bg-cover bg-center py-20 text-center text-6xl font-bold text-white shadow-xl"
   >
     <p
       transition:name="heroTxt"
@@ -21,7 +21,7 @@ const introText = "Here are a few of the service we offer"
     </p>
   </div>
   <p transition:name="introTxt" class="m-10 text-center text-xl font-bold">
-   {introText}
+    {introText}
   </p>
   <MoreService />
   <div class="mt-60"></div>
