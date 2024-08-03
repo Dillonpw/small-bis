@@ -9,13 +9,13 @@ export default function Faq() {
   return (
     <div
       id="FAQ"
-      className="mx-40 my-20 flex flex-col items-center justify-center text-2xl"
+      className="mx-40 my-20 flex flex-col items-center justify-center text-xl"
     >
       <h1 className="mb-10 text-4xl">Frequently Asked Questions</h1>
-      <Accordion type="single" collapsible className="w-full">
+      <Accordion type="single" collapsible className="w-full text-left">
         <AccordionItem value="item-1">
           <AccordionTrigger>Can you do this particular job?</AccordionTrigger>
-          <AccordionContent className="text-xl">
+          <AccordionContent className="text-lg">
             Yes. We do that particular job multiple times a week, sometimes
             multiple times a day.
           </AccordionContent>
@@ -24,7 +24,7 @@ export default function Faq() {
           <AccordionTrigger>
             I have been burned in the past, will that happen here?
           </AccordionTrigger>
-          <AccordionContent className="text-xl">
+          <AccordionContent className="text-lg">
             Absoluetely not, we have a proven track record of successful jobs
             and satisfied clients. Don't believe us? Check out our customer
             reviews.
@@ -32,7 +32,7 @@ export default function Faq() {
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>When will you be available next?</AccordionTrigger>
-          <AccordionContent className="text-xl">
+          <AccordionContent className="text-lg">
             Our availablility is constantly changing, if you are interested in
             working together please conact us through our comapany email or
             phone, both can be found in our contact page.
