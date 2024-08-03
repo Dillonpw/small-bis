@@ -1,7 +1,7 @@
 {
   "name": "dillonpw-small-bis",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,8 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "@astrojs/react": "^3.6.0",
+    "@astrojs/check": "^0.9.1",
+    "@astrojs/react": "^3.6.1",
     "@astrojs/tailwind": "^5.1.0",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
@@ -21,7 +21,7 @@
     "@radix-ui/react-hover-card": "^1.1.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.10.3",
+    "astro": "^4.13.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.408.0",
