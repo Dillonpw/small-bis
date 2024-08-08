@@ -6,11 +6,13 @@ interface NavLinkProps {
   href: string;
   children: React.ReactNode;
   isActive: boolean;
+  testId: string;
 }
 
-const NavLink: FC<NavLinkProps> = ({ href, children, isActive }) => (
+const NavLink: FC<NavLinkProps> = ({ href, children, isActive, testId }) => (
   <li>
     <a
+      data-testid={testId}
       className={`un rounded-lg md:text-xl lg:text-2xl xl:text-4xl ${
         isActive ? "font-bold text-blue-400 " : ""
       }`}
@@ -20,7 +22,8 @@ const NavLink: FC<NavLinkProps> = ({ href, children, isActive }) => (
     </a>
   </li>
 );
-//update these values if you plan to change the names of any of the pages//
+
+// Update these values if you plan to change the names of any of the pages
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/About", label: "About" },
@@ -56,12 +59,15 @@ const Nav: FC = () => {
                 key={item.href}
                 href={item.href}
                 isActive={activePath === item.href}
+                testId={`nav-link-${item.label}`}
               >
                 {item.label}
               </NavLink>
             ))}
             <li>
-              <ThemeToggle />
+      <ThemeToggle 
+      data-testid="theme-toggle-desktop"
+      />
             </li>
           </ul>
         </nav>
@@ -74,7 +80,9 @@ const Nav: FC = () => {
             <p className="text-2xl font-bold">Logo</p>
           </a>
           <div className="flex items-center">
-            <ThemeToggle />
+            <ThemeToggle
+      data-testid="theme-toggle-mobile"
+      />
             <button
               className="px-2 hover:scale-110"
               aria-label="dropdown"
@@ -91,6 +99,7 @@ const Nav: FC = () => {
                 key={item.href}
                 href={item.href}
                 isActive={activePath === item.href}
+                testId={`nav-link-${item.label.toLowerCase()}`}
               >
                 {item.label}
               </NavLink>

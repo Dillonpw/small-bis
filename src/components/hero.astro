@@ -4,7 +4,7 @@ import Image from "astro/components/Image.astro";
 
 // adjust these variable to change your content
 const mainText = "Main Keywords";
-const secondaryText = " brief description of services";
+const secondaryText = "brief description of services";
 ---
 
 <head>
@@ -13,6 +13,7 @@ const secondaryText = " brief description of services";
 
 <section class="relative z-[-10] h-[70vh] w-full">
   <Image
+    data-testid="hero-img"
     src="/heroimg.webp"
     alt="hero"
     loading="eager"
@@ -24,12 +25,14 @@ const secondaryText = " brief description of services";
     class="relative z-10 flex h-full flex-col items-center justify-center text-gray-100"
   >
     <h1
+    data-testid="hero-text"
       transition:name="heroTxt"
       class="pb-10 pt-20 text-center text-6xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-8xl"
     >
       {mainText}
     </h1>
     <h2
+      data-testid="intro-text"
       transition:name="introTxt"
       class="pb-6 text-center text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,4)] md:text-4xl"
     >
