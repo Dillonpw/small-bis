@@ -29,5 +29,4 @@ This is a simple, responsive website template for small businesses. It consists 
 To get started with this project:
 
 ```bash
-git clone https://github.com/dillonpw/small-bis.git
-cd small-bis
+npm i dillonpw-small-bis
