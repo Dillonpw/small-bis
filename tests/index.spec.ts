@@ -57,9 +57,18 @@ test.describe("Home Page", () => {
 
     await expect(IntroText).toBeVisible();
     await expect(IntroText).toHaveText("brief description of services");
-
   });
 
-
-
+  test("services section to have working links", async ({ page }) => {
+    await page
+      .locator("section")
+      .filter({ hasText: "Name of this service Lorem" })
+      .getByRole("link")
+      .click();
+    await expect(page).toHaveURL("http://localhost:4321/Services");
+    await page.locator("h1").filter({ hasText: "LOGO" }).click();
+    await expect(page).toHaveURL("http://localhost:4321/");
+    await page.getByRole("link", { name: "About Our Services" }).nth(1).click();
+    await expect(page).toHaveURL("http://localhost:4321/Services");
+  });
 });
