@@ -12,7 +12,7 @@ import "../styles/tailwind.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro small business wesbite template" />
@@ -26,15 +26,25 @@ import "../styles/tailwind.css";
     />
     <ViewTransitions />
     <script is:inline>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
+      const theme = (() => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+
+      if (theme === "light") {
         document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
       }
+      window.localStorage.setItem("theme", theme);
     </script>
     <title>{title}</title>
   </head>

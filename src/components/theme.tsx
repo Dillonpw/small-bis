@@ -1,46 +1,45 @@
-import { useEffect, useState, useCallback } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun } from "@fortawesome/free-regular-svg-icons";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
+"use client";
 
-interface ThemeToggleProps {
-  "data-testid"?: string;
-}
+import * as React from "react";
+import { Moon, Sun } from "lucide-react";
 
-const ThemeToggle: React.FC<ThemeToggleProps> = ({ "data-testid": testId }) => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+import { Button } from "@/components/ui/button";
 
-  useEffect(() => {
-    const isDarkMode = localStorage.getItem("theme") === "dark";
-    setDarkMode(isDarkMode);
-    document.documentElement.classList.toggle("dark", isDarkMode);
-    console.log('ThemeToggle mounted with dark mode:', isDarkMode);
-  }, []);
+export function ThemeToggle() {
+  const [theme, setTheme] = React.useState<"light" | "dark">(() => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme") as "light" | "dark";
+    }
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      return "dark";
+    }
+    return "light";
+  });
 
-  const toggleTheme = useCallback(() => {
-    const isDarkMode = !darkMode;
-    setDarkMode(isDarkMode);
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-    document.documentElement.classList.toggle("dark", isDarkMode);
-    console.log('Theme toggled. Dark mode is now:', isDarkMode);
-  }, [darkMode]);
+  React.useEffect(() => {
+    const root = document.documentElement;
+    if (theme === "light") {
+      root.classList.remove("dark");
+    } else {
+      root.classList.add("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
-    <div className="ml-2">
-      <button
-        data-testid={testId}
-        aria-label="theme-toggle"
-        className="mt-2 flex h-10 w-10 items-center justify-center text-2xl font-bold transition-transform duration-300 ease-in-out"
-        onClick={toggleTheme}
-      >
-        <FontAwesomeIcon
-          icon={darkMode ? faSun : faMoon}
-          fixedWidth
-          className="theme-icon text-5xl text-yellow-400 transition-transform duration-300 ease-out"
-        />
-      </button>
-    </div>
+    <Button
+      variant="ghost"
+      size="icon"
+      onClick={() =>
+        setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"))
+      }
+    >
+      <Sun className="h-[1.5rem] w-[1.3rem] dark:hidden" />
+      <Moon className="hidden h-5 w-5 dark:block" />
+      <span className="sr-only">Toggle theme</span>
+    </Button>
   );
-};
-
-export default ThemeToggle;
+}
