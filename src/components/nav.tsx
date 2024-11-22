@@ -49,7 +49,7 @@ export default function Nav() {
   return (
     <header className="fixed-nav bg-background shadow-lg transition-all duration-300">
       {/* Desktop Navigation */}
-      <div className="mx-20 hidden py-2 text-2xl md:block">
+      <div className="mx-10 hidden py-2 text-2xl md:block">
         <nav className="my-4 flex items-center justify-between">
           <a href="/">
             <h1 className="font-bold">LOGO</h1>

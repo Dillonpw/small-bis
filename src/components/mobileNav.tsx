@@ -29,7 +29,7 @@ export function MobileNav() {
   }, []);
 
   return (
-    <div className="relative py-2 text-4xl md:hidden">
+    <div className="relative p-2 text-4xl md:hidden">
       <nav className="my-4 flex items-center justify-between">
         <a href="/">
           <p className="text-2xl font-bold">Logo</p>
