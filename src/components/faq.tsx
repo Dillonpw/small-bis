@@ -9,7 +9,7 @@ export default function Faq() {
   return (
     <div
       id="FAQ"
-      className="mx-40 my-20 flex flex-col items-center justify-center text-xl"
+      className="mx-40 mt-60 flex flex-col items-center justify-center text-xl"
     >
       <h1 className="mb-10 text-4xl">Frequently Asked Questions</h1>
       <Accordion type="single" collapsible className="w-full text-left">

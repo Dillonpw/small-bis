@@ -7,7 +7,7 @@ const { title } = Astro.props;
 import Nav from "../components/nav.tsx";
 import Action from "../components/action.astro";
 import Footer from "../components/footer.astro";
-import ViewTransitions from "astro/components/ViewTransitions.astro";
+import { ClientRouter } from 'astro:transitions';
 import "../styles/tailwind.css";
 ---
 
@@ -24,7 +24,7 @@ import "../styles/tailwind.css";
       name="keywords"
       content="website template, astro, react, showcase, starlight, responsive design, HTML5, CSS3, JavaScript, performance optimization, SEO friendly, modern web design, cross-browser compatibility, fast loading, mobile-first design, user-friendly interface, web development, clean code, W3C standards, customizable templates"
     />
-    <ViewTransitions />
+    <ClientRouter />
     <script is:inline>
       const theme = (() => {
         if (
