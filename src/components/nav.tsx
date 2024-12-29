@@ -21,7 +21,7 @@ const NavLink: React.FC<NavLinkProps> = ({
     <a
       data-testid={testId}
       className={`un rounded-lg md:text-xl lg:text-2xl xl:text-4xl ${
-        isActive ? "font-bold text-primary" : ""
+        isActive ? "text-background underline" : ""
       }`}
       href={href}
     >
